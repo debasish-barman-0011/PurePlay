@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+.logo {
+  margin: 0;
+  font-size: 28px;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-items a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 6px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.buttons button i {
+  font-size: 16px;
+}
+
+/* Responsive Styles */
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+    z-index: 1;
+  }
+
+  .nav-items a {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+  }
+
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .buttons button {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+    border-bottom: 1px solid #444;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  #menu-toggle:checked ~ .nav-items {
+    display: flex;
+  }
+}

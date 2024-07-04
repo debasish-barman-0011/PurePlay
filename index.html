@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PurePlay || Enjoy Ad-Free YouTube Videos ||</title>
+    <link rel="shortcut icon" href="youtube.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1 class="logo headings">
+          <i class="fa-brands fa-google-play"></i> PurePlay
+        </h1>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+          <i class="fas fa-bars"></i>
+        </label>
+        <div class="nav-items">
+          <a href="about.html">About</a>
+          <a href="developers.html">Developers</a>
+          <a href="https://dbport.netlify.app/#contact">Contact</a>
+          <div class="buttons">
+            <button type="button">
+              <i class="fa-solid fa-cloud-arrow-down"></i> Download
+            </button>
+            <button type="button">
+              <i class="fa-solid fa-heart"></i> Favourite
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <aside id="playlist-sidebar">
+        <h2>Video Playlist</h2>
+        <ul id="playlist">
+          <!-- Playlist items will be added dynamically -->
+        </ul>
+      </aside>
+      <div id="components-div">
+        <div id="search-container">
+          <input
+            type="text"
+            id="video-url"
+            placeholder="Enter YouTube Video URL"
+          />
+          <button id="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <button id="add-playlist-btn">
+            <i class="fa-solid fa-bookmark"></i>
+          </button>
+        </div>
+        <div id="video-player">
+          <!-- YouTube video player will be embedded here -->
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- <a href="">
+            <i class="fa-solid fa-angles-right"></i> My Playlist
+        </a> -->
+      <a href="privacy.html">
+        <i class="fa-solid fa-angles-right"></i> Privacy Policy
+      </a>
+      <a href="https://dbport.netlify.app/#contact">
+        <i class="fa-solid fa-angles-right"></i> Contact Us
+      </a>
+      <a href="https://github.com/debasish-barman-0011/PurePlay">
+        <i class="fa-solid fa-angles-right"></i> Last Updates
+      </a>
+      <a href="developers.html">
+        <i class="fa-solid fa-angles-right"></i> Developers
+      </a>
+    </footer>
+    <script src="script.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developers - PurePlay ||Ad-Free Video Player||</title>
+    <link rel="shortcut icon" href="./images/youtube.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      body {
+        background-color: #1a1a1a;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+      }
+      .developer-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        list-style-type: none;
+        padding: 0;
+      }
+      .developer-card {
+        background-color: #333;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .developer-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+      }
+      .developer-name {
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .developer-description {
+        font-size: 0.9em;
+        margin-bottom: 15px;
+      }
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
+      .social-links a {
+        color: #ffffff;
+        font-size: 1.2em;
+        transition: color 0.3s ease;
+      }
+      .social-links a:hover {
+        color: #4caf50;
+      }
+      .back-btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      .back-btn:hover {
+        background-color: #45a049;
+      }
+      @media (max-width: 768px) {
+        .developer-list {
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Developers</h1>
+      <ul class="developer-list">
+        <li class="developer-card">
+          <img src="./images/cr.jpeg" alt="Developer 1" class="developer-img" />
+          <h2 class="developer-name">Subhradip Parshi</h2>
+          <p class="developer-description">
+            UI/UX designer specializing in intuitive and accessible interfaces.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/Subhradip-2004" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/subhradip-parshi-8a07712a5/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="mailto:subhradipparshi@gmail.com" target="_blank"
+              ><i class="fa fa-envelope"></i
+            ></a>
+            <a href="https://subradipparshi.netlify.app/" target="_blank"
+              ><i class="fa-solid fa-address-card"></i
+            ></a>
+          </div>
+        </li>
+        <li class="developer-card">
+          <img src="./images/me.jpg" alt="Developer 2" class="developer-img" />
+          <h2 class="developer-name">Debasish Barman</h2>
+          <p class="developer-description">
+            Full-stack developer with a passion for creating seamless user
+            experiences.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/debasish-barman-0011/" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/debasish-barman-923806280/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/mr.debasish.barman/"
+              target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://dbport.netlify.app/" target="_blank"
+              ><i class="fa-solid fa-address-card"></i
+            ></a>
+          </div>
+        </li>
+        <li class="developer-card">
+          <img src="./images/tusu.jpg" alt="Tusu" class="developer-img" />
+          <h2 class="developer-name">Baisakhi Dutta</h2>
+          <p class="developer-description">
+            Backend developer with expertise in scalable and efficient systems.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/TusuD" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/tusu/" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://www.instagram.com/baisakhi0001/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://tusu.netlify.app/" target="_blank"
+              ><i class="fa-solid fa-address-card"></i
+            ></a>
+          </div>
+        </li>
+      </ul>
+      <a href="index.html" class="back-btn">
+        <i class="fa-brands fa-google-play"></i> PurePlay Home</a
+      >
+    </div>
+  </body>
+</html>
