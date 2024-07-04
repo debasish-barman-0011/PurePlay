@@ -129,6 +129,8 @@ footer a {
 
   main {
     flex-direction: column;
+    background: #282828;
+
   }
   #video-player {
     width: 100%;
