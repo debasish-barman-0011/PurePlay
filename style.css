@@ -137,3 +137,21 @@ footer a {
     position: relative;
   }
 }
+/* Small Screen Responsiveness */
+@media screen and (max-width: 399px) {
+  #search-container input {
+    border: 1px solid #191919;
+    border-radius: 4px;
+    background: #121212;
+    color: #fff;
+    font-size: 0.8rem;
+  }
+  #search-container button i {
+    font-size: 1rem;
+  }
+  #search-container button {
+    padding: 0.1rem 0.7rem;
+    margin-left: 0.2rem;
+    cursor: pointer;
+  }
+}

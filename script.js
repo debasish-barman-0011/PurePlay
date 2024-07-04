@@ -91,7 +91,7 @@ async function addToPlaylist(videoId) {
 
 // ===Get YouTube video title from YouTube API=== //
 async function getVideoTitle(videoId) {
-  const apiKey = 'AIzaSyACmkBsmxnUdMfrKAsGnSIDOG7kfyZLVjo';
+  const apiKey = "AIzaSyACmkBsmxnUdMfrKAsGnSIDOG7kfyZLVjo";
   const response = await fetch(
     `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoId}&key=${apiKey}`
   );
@@ -149,7 +149,7 @@ searchBtn.addEventListener("click", async () => {
   if (videoId) {
     currentVideoId = videoId;
     // ==Clear the playlist before adding the new video== //
-    playlist.innerHTML = "";
+    // playlist.innerHTML = "";
     await embedVideo(videoId);
   } else {
     alert("Invalid YouTube Video URL");
